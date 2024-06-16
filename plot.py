@@ -39,7 +39,6 @@ ax1.set_xlabel('Order of Addresses by Allocation %')
 ax1.set_ylabel('Percentage')
 line2, = ax1.plot(x, df['eligible_percentage'], color='tab:red', label='% of Addresses that are Eligible')
 line3, = ax1.plot(x, (df['cumulative_allocation_eligible'] / df['cumulative_allocation_all']) * 100, color='tab:green', label='Cumulative Allocation % (Eligible/All)')
-ax1.tick_params(axis='y', labelcolor='tab:red')
 
 # Add titles and legend
 plt.title('Superform LayerZero Proposed RFP Eligibility')
